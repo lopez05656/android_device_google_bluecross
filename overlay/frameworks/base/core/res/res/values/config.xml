@@ -78,6 +78,11 @@
   <!-- Whether the device supports Smart Pixels -->
     <bool name="config_enableSmartPixels">true</bool>
 
+  <!-- Smart charge sysfs node and value for suspend/resume charging-->
+    <string name="config_SmartChargingSysfsNode" translatable="false">/sys/class/power_supply/battery/input_suspend</string>
+    <string name="config_SmartChargingSuspendValue" translatable="false">1</string>
+    <string name="config_SmartChargingResumeValue" translatable="false">0</string>
+
     <!-- Color mode to use when accessibility transforms are enabled. This color mode must be
      supported by the device, but not necessarily appear in config_availableColorModes. The
      regularly selected color mode will be used if this value is negative. -->
